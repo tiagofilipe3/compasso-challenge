@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
+
 import "./App.css";
 import Container from "../Container";
 import Title from "../Title";
@@ -7,14 +9,78 @@ import Text from "../Text";
 import { ReactComponent as SearchIcon } from "../../assets/search.svg";
 import Button from "../Button";
 import User from "../User";
-import { FAVORITES, REPOSITORY } from "../constants/tabs";
+import { STARRED, REPOSITORY } from "../constants/tabs";
+import github from "../http/github";
+import "react-toastify/dist/ReactToastify.css";
 
 function UserList() {
   const [searchValue, setSearchValue] = useState();
-  const [user, setUser] = useState({ name: "Tiago Filipe" });
+  const [user, setUser] = useState(null);
+  const [repoList, setRepoList] = useState(null);
+  const [starredList, setStarredList] = useState(null);
   const [selectedTab, setSelectedTab] = useState(null);
+  const [isSearching, setIsSearching] = useState(false);
 
-  const handleSearch = () => {};
+  const handleSearch = async () => {
+    if (!searchValue) {
+      toast.warn("Digite um usuário para pesquisar");
+      return;
+    }
+
+    try {
+      const res = await github.get(`/users/${searchValue}`);
+
+      if (res.data) {
+        setUser(res.data);
+      }
+    } catch (e) {
+      toast.error("Usuário não encontrado");
+    }
+  };
+
+  const handleSelectRepository = async () => {
+    setSelectedTab(REPOSITORY);
+    setIsSearching(true);
+
+    try {
+      const res = await github.get(`/users/${user.login}/repos`);
+
+      if (res.data) {
+        setRepoList(res.data);
+      }
+
+      setIsSearching(false);
+    } catch (e) {
+      setIsSearching(false);
+      toast.error("Não foi possível buscar os repositórios do usuário");
+    }
+  };
+
+  const handleSelectStarred = async () => {
+    setSelectedTab(STARRED);
+    setIsSearching(true);
+
+    try {
+      const res = await github.get(`/users/${user.login}/starred`);
+
+      if (res.data) {
+        setStarredList(res.data);
+      }
+
+      setIsSearching(false);
+    } catch (e) {
+      setIsSearching(false);
+      toast.error(
+        "Não foi possível buscar os repositórios favoritos do usuário"
+      );
+    }
+  };
+
+  const handleKeyPress = async e => {
+    if (e.which === 13) {
+      await handleSearch();
+    }
+  };
 
   return (
     <Container width="100%" column alignItems="center">
@@ -30,6 +96,7 @@ function UserList() {
             }}
             value={searchValue}
             onChange={setSearchValue}
+            onKeyPress={handleKeyPress}
           />
           <Button width="40px" onClick={handleSearch} backgroundColor="#72a5f7">
             <SearchIcon style={{ width: "15px", height: "15px" }} />
@@ -39,18 +106,14 @@ function UserList() {
       <Container column marginTop="40px" alignItems="center">
         {user && (
           <User
-            onSelectRepository={() => setSelectedTab(REPOSITORY)}
-            onSelectFavorites={() => setSelectedTab(FAVORITES)}
             user={user}
+            repoList={repoList}
+            isSearching={isSearching}
+            starredList={starredList}
+            selectedTab={selectedTab}
+            onSelectStarred={handleSelectStarred}
+            onSelectRepository={handleSelectRepository}
           />
-        )}
-        {selectedTab === REPOSITORY && (
-          // TODO: repository list
-          <div>Repository list</div>
-        )}
-        {selectedTab === FAVORITES && (
-          // TODO: repository list
-          <div>Favorites list</div>
         )}
       </Container>
     </Container>

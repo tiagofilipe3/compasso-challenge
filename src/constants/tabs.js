@@ -1,2 +1,2 @@
 export const REPOSITORY = "REPOSITORY";
-export const FAVORITES = "FAVORITES";
+export const STARRED = "STARRED";

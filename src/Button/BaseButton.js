@@ -5,7 +5,7 @@ import classes from "./Button.styles";
 const BaseButton = styled.button`
   ${classes.root}
   width: ${({ width }) => width && width};
-  height: ${({ height }) => height || "36px"};
+  height: ${({ height }) => height && height};
   background-color: ${({ backgroundColor }) =>
     backgroundColor && backgroundColor};
 `;
@@ -18,7 +18,7 @@ BaseButton.propTypes = {
 
 BaseButton.defaultProps = {
   width: undefined,
-  height: undefined,
+  height: "36px",
   backgroundColor: undefined
 };
 
