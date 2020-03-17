@@ -1,14 +1,17 @@
-import { css } from '@emotion/core';
+import { css } from "@emotion/core";
 
-const searchInputStyles = css`
-  border: 1px solid #e3e3e3;
-  height: 30px;
-  border-radius: 10px;
-  
-  &:focus {
-    outline-width: 0;
-    box-shadow: 0 0 1px 1px #72A5F7;
-  }
-`;
+const classes = {
+  root: css`
+    border: 1px solid #e3e3e3;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 5px;
 
-export default searchInputStyles;
+    &:focus {
+      outline-width: 0;
+      box-shadow: 0 0 1px 1px #72a5f7;
+    }
+  `
+};
+
+export default classes;

@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fa5c5e0-76c2-458c-90c9-0625e30dc227" name="Default Changelist" comment="" />
+    <list default="true" id="0fa5c5e0-76c2-458c-90c9-0625e30dc227" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Button/BaseButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Button/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Button/Button.styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Button/Button.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Button/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/User/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/User/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/tabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/search.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Container/Container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Container/Container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Container/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Container/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchInput/SearchInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchInput/SearchInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchInput/SearchInput.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchInput/SearchInput.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Text/Text.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Text/Text.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserList/UserList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserList/UserList.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,13 +56,15 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tiago\ProjetosIntelliJ\compasso-challenge\assets" />
       <recent name="C:\Users\tiago.filipe\IdeaProjects\compasso-challenge\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tiago\ProjetosIntelliJ\compasso-challenge\src\User" />
       <recent name="C:\Users\tiago.filipe\IdeaProjects\compasso-challenge\src\UserList" />
     </key>
   </component>
@@ -74,6 +96,9 @@
       <workItem from="1584367558406" duration="284000" />
       <workItem from="1584367869048" duration="485000" />
       <workItem from="1584368367380" duration="16986000" />
+      <workItem from="1584397261569" duration="431000" />
+      <workItem from="1584397776575" duration="30000" />
+      <workItem from="1584397821029" duration="7756000" />
     </task>
     <servers />
   </component>
@@ -85,37 +110,47 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2472" y="178" key="#Inspections/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584374570321" />
-    <state width="1877" height="364" key="GridCell.Tab.0.bottom" timestamp="1584377527309">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="380" key="GridCell.Tab.0.bottom" timestamp="1584397693244">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="364" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584377527309" />
-    <state width="1877" height="364" key="GridCell.Tab.0.center" timestamp="1584377527309">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="380" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584397693244" />
+    <state width="1877" height="380" key="GridCell.Tab.0.center" timestamp="1584397693244">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="364" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584377527309" />
-    <state width="1877" height="364" key="GridCell.Tab.0.left" timestamp="1584377527308">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="380" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584397693244" />
+    <state width="1877" height="380" key="GridCell.Tab.0.left" timestamp="1584397693244">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="364" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584377527308" />
-    <state width="1877" height="364" key="GridCell.Tab.0.right" timestamp="1584377527309">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="380" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584397693244" />
+    <state width="1877" height="380" key="GridCell.Tab.0.right" timestamp="1584397693244">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="364" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584377527309" />
-    <state x="2402" y="161" width="998" height="712" key="SettingsEditor" timestamp="1584392730713">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="380" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584397693244" />
+    <state x="482" y="161" width="998" height="712" key="SettingsEditor" timestamp="1584397837953">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2402" y="161" width="998" height="712" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584392730713" />
+    <state x="482" y="161" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584397837953" />
     <state x="336" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1584367560680">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="336" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1584367560680" />
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584401236051">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584401236051" />
     <state x="2510" y="65" width="861" height="909" key="find.popup" timestamp="1584380582758">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2510" y="65" width="861" height="909" key="find.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584380582758" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584379245157">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584405264991">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584379245157" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584405264991" />
   </component>
 </project>

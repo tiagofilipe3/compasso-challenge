@@ -1,11 +1,11 @@
-import React from 'react';
-import * as PropTypes from 'prop-types';
-import searchInputStyles from './SearchInput.styles';
+import React from "react";
+import * as PropTypes from "prop-types";
+import classes from "./SearchInput.styles";
 
-const SearchInput = (props) => {
-  const { value, onChange, style, children } = props;
+const SearchInput = props => {
+  const { value, onChange, style } = props;
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     onChange(e.target.value);
   };
 
@@ -13,23 +13,21 @@ const SearchInput = (props) => {
     <input
       value={value}
       style={style}
-      css={searchInputStyles}
+      css={classes.root}
       onChange={handleChange}
-    >
-      {children}
-    </input>
+    />
   );
 };
 
 SearchInput.propTypes = {
   value: PropTypes.string,
   onChange: PropTypes.func.isRequired,
-  style: PropTypes.shape({}),
+  style: PropTypes.shape({})
 };
 
 SearchInput.defaultProps = {
   value: undefined,
-  style: undefined,
+  style: undefined
 };
 
 export default SearchInput;
