@@ -32,7 +32,7 @@ Container.defaultProps = {
   marginRight: undefined,
   marginBottom: undefined,
   width: undefined,
-  justifyContent: undefined,
+  justifyContent: undefined
 };
 
 export default Container;

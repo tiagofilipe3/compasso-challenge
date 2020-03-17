@@ -10,8 +10,8 @@ import { ReactComponent as SearchIcon } from "../../assets/search.svg";
 import Button from "../Button";
 import User from "../User";
 import { STARRED, REPOSITORY } from "../constants/tabs";
-import github from "../http/github";
 import "react-toastify/dist/ReactToastify.css";
+import { getUser, getUserRepos, getUserStarred } from "../../actions/user";
 
 function UserList() {
   const [searchValue, setSearchValue] = useState();
@@ -28,7 +28,7 @@ function UserList() {
     }
 
     try {
-      const res = await github.get(`/users/${searchValue}`);
+      const res = await getUser(searchValue);
 
       if (res.data) {
         setUser(res.data);
@@ -43,7 +43,7 @@ function UserList() {
     setIsSearching(true);
 
     try {
-      const res = await github.get(`/users/${user.login}/repos`);
+      const res = await getUserRepos(user.login);
 
       if (res.data) {
         setRepoList(res.data);
@@ -61,7 +61,7 @@ function UserList() {
     setIsSearching(true);
 
     try {
-      const res = await github.get(`/users/${user.login}/starred`);
+      const res = await getUserStarred(user.login);
 
       if (res.data) {
         setStarredList(res.data);
@@ -91,6 +91,7 @@ function UserList() {
         <Text scale={1.8}>Digite um usuário para pesquisar</Text>
         <Container alignItems="center" marginTop="20px">
           <SearchInput
+            id="userNameInput"
             style={{
               marginRight: "10px"
             }}
@@ -98,7 +99,13 @@ function UserList() {
             onChange={setSearchValue}
             onKeyPress={handleKeyPress}
           />
-          <Button width="40px" onClick={handleSearch} backgroundColor="#72a5f7">
+          <Button
+            width="40px"
+            id="searchUserBtn"
+            onClick={handleSearch}
+            backgroundColor="#72a5f7"
+          >
+            <div style={{ color: "#fff", marginRight: "5px" }}>Pesquisar</div>
             <SearchIcon style={{ width: "15px", height: "15px" }} />
           </Button>
         </Container>

@@ -4,10 +4,19 @@ import BaseButton from "./BaseButton";
 import Container from "../Container";
 
 const Button = props => {
-  const { onClick, children, width, height, backgroundColor, style } = props;
+  const {
+    id,
+    width,
+    height,
+    style,
+    onClick,
+    children,
+    backgroundColor
+  } = props;
 
   return (
     <BaseButton
+      id={id}
       style={style}
       width={width}
       height={height}
@@ -23,6 +32,7 @@ const Button = props => {
 };
 
 Button.propTypes = {
+  id: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
   children: PropTypes.node,
   width: PropTypes.string,

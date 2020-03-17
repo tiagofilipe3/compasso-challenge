@@ -20,6 +20,7 @@ const User = ({
 }) => (
   <Container column alignItems="center">
     <img
+      id="userImage"
       alt="user"
       style={{ height: "80px", width: "80px" }}
       src={user.avatar_url}
@@ -29,11 +30,16 @@ const User = ({
       <Text scale={1.8}>{user.login}</Text>
     </Container>
     <Container marginTop="15px">
-      <Button backgroundColor="#72a5f7" onClick={onSelectRepository}>
+      <Button
+        id="selectReposBtn"
+        backgroundColor="#72a5f7"
+        onClick={onSelectRepository}
+      >
         <div style={{ color: "#fff", marginRight: "5px" }}>Repositórios</div>
         <SearchIcon style={{ width: "15px", height: "15px" }} />
       </Button>
       <Button
+        id="selectStarredBtn"
         style={{ marginLeft: "10px" }}
         backgroundColor="#72a5f7"
         onClick={onSelectStarred}

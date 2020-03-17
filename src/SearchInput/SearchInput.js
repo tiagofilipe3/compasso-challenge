@@ -3,7 +3,7 @@ import * as PropTypes from "prop-types";
 import classes from "./SearchInput.styles";
 
 const SearchInput = props => {
-  const { value, onChange, style, onKeyPress } = props;
+  const { id, value, onChange, style, onKeyPress } = props;
 
   const handleChange = e => {
     onChange(e.target.value);
@@ -11,6 +11,8 @@ const SearchInput = props => {
 
   return (
     <input
+      id={id}
+      placeholder="Digite"
       onKeyPress={onKeyPress}
       value={value}
       style={style}
@@ -21,6 +23,7 @@ const SearchInput = props => {
 };
 
 SearchInput.propTypes = {
+  id: PropTypes.string.isRequired,
   value: PropTypes.string,
   onChange: PropTypes.func.isRequired,
   style: PropTypes.shape({}),

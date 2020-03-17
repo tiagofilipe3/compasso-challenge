@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fa5c5e0-76c2-458c-90c9-0625e30dc227" name="Default Changelist" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/src/RepositoryTab/RepositoryTab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RepositoryTab/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StarredTab/StarredTab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StarredTab/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/http/github.js" afterDir="false" />
+    <list default="true" id="0fa5c5e0-76c2-458c-90c9-0625e30dc227" name="Default Changelist" comment="Update README.md&#10;Update BaseButton.js&#10;Create RepositoryTab.js and StarredTab.js components&#10;Update UserList.js to fetch the user repo list and starred repo list&#10;Installed react-loading and react-toastify packages">
+      <change afterPath="$PROJECT_DIR$/actions/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Container/Container.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/search.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Button/BaseButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Button/BaseButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Button/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Button/Button.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Button/Button.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Button/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Button/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Container/Container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Container/Container.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SearchInput/SearchInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchInput/SearchInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Text/Text.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Text/Text.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StarredTab/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/StarredTab/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Text/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Text/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Title/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Title/Title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Title/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Title/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/User/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/User/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UserList/UserList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserList/UserList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/tabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserList/UserList.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserList/UserList.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +100,7 @@
       <updated>1584367555537</updated>
       <workItem from="1584367558406" duration="284000" />
       <workItem from="1584367869048" duration="485000" />
-      <workItem from="1584368367380" duration="24563000" />
+      <workItem from="1584368367380" duration="38034000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1584393074526</created>
@@ -102,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584393074526</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update README.md&#10;Update BaseButton.js&#10;Create RepositoryTab.js and StarredTab.js components&#10;Update UserList.js to fetch the user repo list and starred repo list&#10;Installed react-loading and react-toastify packages">
+      <created>1584451637028</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584451637028</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,17 +124,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Update README.md&#10;Update BaseButton.js&#10;Create RepositoryTab.js and StarredTab.js components&#10;Update UserList.js to fetch the user repo list and starred repo list&#10;Installed react-loading and react-toastify packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.md&#10;Update BaseButton.js&#10;Create RepositoryTab.js and StarredTab.js components&#10;Update UserList.js to fetch the user repo list and starred repo list&#10;Installed react-loading and react-toastify packages" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="178" key="#Inspections" timestamp="1584374570321">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2472" y="178" key="#Inspections/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584374570321" />
-    <state x="2349" y="81" width="1301" height="894" key="CommitChangelistDialog2" timestamp="1584393853249">
+    <state x="2349" y="81" width="1301" height="894" key="CommitChangelistDialog2" timestamp="1584469429816">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2349" y="81" width="1301" height="894" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584393853249" />
+    <state x="2349" y="81" width="1301" height="894" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584469429816" />
     <state width="1877" height="364" key="GridCell.Tab.0.bottom" timestamp="1584377527309">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -145,14 +160,18 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2398" y="236" width="1053" height="568" key="MultipleFileMergeDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584445204510" />
-    <state x="2402" y="161" width="998" height="712" key="SettingsEditor" timestamp="1584392730713">
+    <state x="2402" y="161" width="998" height="712" key="SettingsEditor" timestamp="1584453839662">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2402" y="161" width="998" height="712" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584392730713" />
-    <state x="2472" y="241" key="Vcs.Push.Dialog.v2" timestamp="1584393151427">
+    <state x="2402" y="161" width="998" height="712" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584453839662" />
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1584453656506">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="241" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584393151427" />
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584453656506" />
+    <state x="2472" y="241" key="Vcs.Push.Dialog.v2" timestamp="1584451639212">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="241" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584451639212" />
     <state x="336" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1584367560680">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -161,17 +180,17 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2689" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584445174648" />
-    <state x="2510" y="65" width="861" height="909" key="find.popup" timestamp="1584450681908">
+    <state x="2510" y="65" width="861" height="909" key="find.popup" timestamp="1584455526544">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2510" y="65" width="861" height="909" key="find.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584450681908" />
+    <state x="2510" y="65" width="861" height="909" key="find.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584455526544" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1584450721714">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2536" y="240" key="run.anything.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584450721714" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584451372448">
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584469642539">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584451372448" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1584469642539" />
   </component>
 </project>

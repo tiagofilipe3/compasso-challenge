@@ -11,12 +11,16 @@
   ],
   "plugins": [
     "react",
-    "prettier"
+    "prettier",
+    "jest"
   ],
   "rules": {
     "max-len": ["error", { "code": 100, "ignoreStrings": true, "ignoreUrls": true }],
     "react/jsx-filename-extension": [0],
     "linebreak-style": 0,
     "prettier/prettier": "error"
+  },
+  "env": {
+    "jest/globals": true
   }
 }
